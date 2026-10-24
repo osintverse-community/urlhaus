@@ -47,7 +47,7 @@ secrets:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/urlhaus@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/urlhaus@sha256:7a45aa8ddbc13045ec9c0f2036c66f2d706afccc71a08729d6740c34ec74c56e
   platforms: [linux/amd64, linux/arm64]
   command: ["urlhaus", "--url", "{url}", "--domain", "{domain}", "--ip", "{ip}", "--hash", "{hash}"]
   output_format: json
